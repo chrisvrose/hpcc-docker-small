@@ -1,0 +1,15 @@
+version: "3"
+
+services: 
+    hpcc:
+        build: .
+        ports:
+            - 8010:8010
+            - 8002:8002
+        stop_grace_period: "1m"
+        volumes: 
+            - hpcclogs:/var/log/HPCCSystems
+            - hpccdata:/var/lib/HPCCSystems
+volumes:
+    hpcclogs:
+    hpccdata:
