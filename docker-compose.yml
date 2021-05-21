@@ -3,13 +3,18 @@ version: "3"
 services: 
     hpcc:
         build: .
+        restart: "always"
         ports:
             - 8010:8010
             - 8002:8002
+            - 8015:8015
+            - 9876:9876
         stop_grace_period: "1m"
         volumes: 
             - hpcclogs:/var/log/HPCCSystems
             - hpccdata:/var/lib/HPCCSystems
+            - hpccrun:/run
 volumes:
     hpcclogs:
     hpccdata:
+    hpccrun:
