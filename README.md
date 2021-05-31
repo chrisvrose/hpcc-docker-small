@@ -1,6 +1,6 @@
 # hpcc-docker-small
 
-Provides a quick start script to start a single node HPCC Systems Cluster on docker.
+Provides a quick start script to start a single node HPCC Systems Cluster on docker. Use it at your own discretion.
 
 ### Note
 
