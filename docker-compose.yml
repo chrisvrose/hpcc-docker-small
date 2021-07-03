@@ -8,6 +8,7 @@ services:
             - 8010:8010
             - 8002:8002
             - 8015:8015
+            - 8510:8510
             - 9876:9876
         stop_grace_period: "1m"
         volumes: 
